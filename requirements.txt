@@ -1,0 +1,25 @@
+REQUIREMENTS
+- python v3.10
+- psycopg2 (for PostgreSQL interaction)
+- PostgreSQL
+
+INSTALLATION
+1. Install Python 3.10 from the official Python website.
+2. Install psycopg2 using pip:
+"pip install psycopg2"
+3. Install PostgreSQL from the official PostgreSQL website.
+
+INSTRUCTIONS
+1. Create a PostgreSQL database named "football players".
+2. Run the scraper script from the command line and pass as an argument the path to the playersURLs.csv file.
+"python playersScraper.py 'playersURLs.csv'"
+3. After running the python script, execute the SQL queries from the file "queries.sql".
+
+Modify the following connection parameters in the python script (playersScraper.py) according to your PostgreSQL setup:
+(
+    'dbname',
+    'user',
+    'password',
+    'host',
+    'port'
+) 
